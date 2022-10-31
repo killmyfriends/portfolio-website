@@ -160,32 +160,6 @@ export const tkIcon = (
   </svg>
 );
 
-export const mintWrapper = styled.div`
-  display: flex;
-  place-content: center;
-  padding: 10px;
-  border-radius: 1rem;
-  width: fit-content;
-  margin: 100px;
-`;
-export const mintRow = styled.div`
-flex-direction: row;
-gap: 15px;
-padding: 5px;
-width: max-content;
-`;
-export const mintCol = styled.div`
-
-flex-direction: column;
-gap: 15px;
-text-align: center;
-`;
-export const mintCol = styled.div`
-
-flex-direction: column;
-gap: 15px;
-text-align: center;
-`;
 
 export const btnObjs = [
   {

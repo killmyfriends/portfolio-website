@@ -10,8 +10,7 @@ const MintWrapper = () => {
   place-content: center;
   padding: 10px;
   border-radius: 1rem;
-  width: fit-content;
-  margin: 100px;
+  width: 100%;
   background-color: #C2E0FF;
   flex-direction: column;
 `;
@@ -19,10 +18,9 @@ const MintWrapper = () => {
 display: flex;
 flex-direction: row;
 gap: 15px;
-padding: 5px;
-width: max-content;
+width: fit-content;
 background-color: #69B3FF;
-padding: 10px;
+padding: 5px;
 
 `;
   const MintCol = styled.div`
@@ -60,18 +58,19 @@ border-radius: 1 rem;
   const ContentCandy = styled.div`
   padding: 10px;
   background-color: #3F9CFC;
-  border-radius: 1rem 1rem 0rem 0rem;
+  border-radius: 1rem;
+  
 
 `;
-  const MainContainer = styled.main`
-background-color: #3F9CFC;
-
-  height: fit-content;
-  text-align: center;
+  const HeadBetweenFoot = styled.div`
+display: flex;
+flex-direction: row;
+place-content: space-around;
+padding: 5px;
+height: 10px;
+background-color: #C2E0FF;
 
 `;
-
-
   return (
     <MintWrapper>
       <ContentCandy>
@@ -108,12 +107,20 @@ background-color: #3F9CFC;
             })}
           </MintCol>
         </MintRow>
+        <HeadBetweenFoot />
+        <MintRow>
+          <MintCol>
+            <Main />
+          </MintCol>
+        </MintRow>
+        <HeadBetweenFoot />
+        <MintRow>
+          <MintCol>
+            <Footer />
+          </MintCol>
+        </MintRow>
         <FooterMint />
       </ContentCandy>
-      <MainContainer>
-        <Main />
-      </MainContainer>
-      <Footer/>
     </MintWrapper>
   );
 };

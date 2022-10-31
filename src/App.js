@@ -8,6 +8,8 @@ import styled from 'styled-components';
 const Container = styled.div`
   display: flex;
   place-content: center;
+  margin: 0 auto;
+  width: 100%;
 `;
 export default function App() {
   return (

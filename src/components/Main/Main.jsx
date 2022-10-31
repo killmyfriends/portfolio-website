@@ -1,11 +1,17 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
 
-const Main = () =>{
+const Main = () => {
+  const MainContainer = styled.main`
+  width: fit-content;
+    text-align: center;
+  `;
+
   return (
-    <main>
-      <h1>Some main content here</h1>
-    </main>
-  )
-}
+    <MainContainer>
+      <h1>Some MainContainer content here</h1>
+    </MainContainer>
+  );
+};
 
-export default Main
+export default Main;
