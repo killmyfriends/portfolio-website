@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { btnObjs } from './MintStyle';
+import Main from '../Main/Main';
+import Footer from '../Footer/Footer';
 
 const MintWrapper = () => {
   const MintWrapper = styled.div`
@@ -11,6 +13,7 @@ const MintWrapper = () => {
   width: fit-content;
   margin: 100px;
   background-color: #C2E0FF;
+  flex-direction: column;
 `;
   const MintRow = styled.div`
 display: flex;
@@ -41,7 +44,7 @@ border-radius: 1 rem;
   background-color: #C2E0FF;
 
 `;
-const HeaderMint = styled.div`
+  const HeaderMint = styled.div`
   display: flex;
   flex-direction: row;
   place-content: space-around;
@@ -52,51 +55,67 @@ const HeaderMint = styled.div`
   background-color: #C2E0FF;
 
 
-`
+`;
 
-const ContentCandy = styled.div`
+  const ContentCandy = styled.div`
   padding: 10px;
   background-color: #3F9CFC;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0rem 0rem;
 
-`
+`;
+  const MainContainer = styled.main`
+background-color: #3F9CFC;
+
+  height: fit-content;
+  text-align: center;
+
+`;
+
+
   return (
     <MintWrapper>
       <ContentCandy>
-      <HeaderMint />
-      <MintRow>
-        <MintCol>
-          {btnObjs.map((btn) => {
-            return [ btn.tiktok, btn.facebook];
-          })}
-        </MintCol>
-        <MintCol>
-          {btnObjs.map((btn) => {
-            return [  btn.snapchat, btn.twitter];
-          })}
-        </MintCol>
-        <MintCol>
-          {btnObjs.map((btn) => {
-            return [btn.google, btn.github, ];
-          })}
-        </MintCol>
-        <MintCol>
-          {btnObjs.map((btn) => {
-            return [btn.instagram, btn.facebookMess, ];
-          })}
-        </MintCol>
-        <MintCol>
-          {btnObjs.map((btn) => {
-            return [btn.linked, btn.youtube, ];
-          })}
-        </MintCol>
-      </MintRow>
-      <FooterMint />
+        <HeaderMint />
+        <MintRow>
+          <MintCol>
+            {btnObjs.map((btn) => {
+              return [btn.facebook];
+            })}
+          </MintCol>
+          <MintCol>
+            {btnObjs.map((btn) => {
+              return [btn.twitter];
+            })}
+          </MintCol>
+          <MintCol>
+            {btnObjs.map((btn) => {
+              return [btn.github];
+            })}
+          </MintCol>
+          <MintCol>
+            {btnObjs.map((btn) => {
+              return [btn.facebookMess];
+            })}
+          </MintCol>
+          <MintCol>
+            {btnObjs.map((btn) => {
+              return [btn.linked];
+            })}
+          </MintCol>
+          <MintCol>
+            {btnObjs.map((btn) => {
+              return [btn.instagram];
+            })}
+          </MintCol>
+        </MintRow>
+        <FooterMint />
       </ContentCandy>
+      <MainContainer>
+        <Main />
+      </MainContainer>
+      <Footer/>
     </MintWrapper>
   );
 };
 
 export default MintWrapper;
-
-
