@@ -2,3 +2,6 @@
   cursor: pointer;
   box-shadow: -1px 1px, 0px -1px, 0 0, 1px 1px;
 }
+.mintWrapper {
+  flex: 1 1 auto;
+}

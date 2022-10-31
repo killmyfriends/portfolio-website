@@ -5,10 +5,10 @@ const FooterContainer = styled.div`
 display: flex;
 flex-directon: row;
 border-radius: 0rem 0rem 1rem 1rem;
-width: max-content;
+
 text-align: center;
 place-content: space-around;
-place-items: center;
+
 
 `
 

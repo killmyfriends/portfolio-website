@@ -3,8 +3,7 @@ import styled from 'styled-components';
 
 const Main = () => {
   const MainContainer = styled.main`
-  width: fit-content;
-    text-align: center;
+  
   `;
 
   return (

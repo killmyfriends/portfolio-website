@@ -1,4 +1,5 @@
 import React from 'react';
+import './mint.css';
 import styled from 'styled-components';
 import { btnObjs } from './MintStyle';
 import Main from '../Main/Main';
@@ -10,14 +11,15 @@ const MintWrapper = () => {
   place-content: center;
   padding: 10px;
   border-radius: 1rem;
-  width: 100%;
   background-color: #C2E0FF;
   flex-direction: column;
+
 `;
   const MintRow = styled.div`
 display: flex;
 flex-direction: row;
 gap: 15px;
+align-content: stretch;
 width: fit-content;
 background-color: #69B3FF;
 padding: 5px;
@@ -27,6 +29,7 @@ padding: 5px;
 display: flex;
 flex-direction: column;
 gap: 10px;
+align-content: stretch;
 text-align: center;
 border-radius: 1 rem;
 
@@ -59,7 +62,7 @@ border-radius: 1 rem;
   padding: 10px;
   background-color: #3F9CFC;
   border-radius: 1rem;
-  
+  flex: 1;
 
 `;
   const HeadBetweenFoot = styled.div`
@@ -72,7 +75,7 @@ background-color: #C2E0FF;
 
 `;
   return (
-    <MintWrapper>
+    <MintWrapper className="mintWrapper">
       <ContentCandy>
         <HeaderMint />
         <MintRow>
@@ -107,13 +110,11 @@ background-color: #C2E0FF;
             })}
           </MintCol>
         </MintRow>
-        <HeadBetweenFoot />
         <MintRow>
           <MintCol>
             <Main />
           </MintCol>
         </MintRow>
-        <HeadBetweenFoot />
         <MintRow>
           <MintCol>
             <Footer />

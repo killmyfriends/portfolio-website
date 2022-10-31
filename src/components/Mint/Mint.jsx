@@ -12,9 +12,7 @@ import styled from 'styled-components';
 
 const Mint = () => {
   return (
-      <div>
         <MintWrapper/>
-      </div>
   );
 };
 
