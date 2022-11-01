@@ -18,9 +18,9 @@ const MintWrapper = () => {
   const MintRow = styled.div`
 display: flex;
 flex-direction: row;
+justify-content: center;
 gap: 15px;
 align-content: stretch;
-width: fit-content;
 background-color: #69B3FF;
 padding: 5px;
 
@@ -62,7 +62,7 @@ border-radius: 1 rem;
   padding: 10px;
   background-color: #3F9CFC;
   border-radius: 1rem;
-  flex: 1;
+
 
 `;
   const HeadBetweenFoot = styled.div`

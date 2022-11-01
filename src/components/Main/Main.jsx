@@ -8,7 +8,7 @@ const Main = () => {
 
   return (
     <MainContainer>
-      <h1>Some MainContainer content here</h1>
+      <h1>Some Main Container content here</h1>
     </MainContainer>
   );
 };
